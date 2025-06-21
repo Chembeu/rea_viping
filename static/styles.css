@@ -1,0 +1,124 @@
+body {
+    margin: 0; /* Remove default body margin */
+    
+    background-color: #004d1a;
+}
+
+.navbar {
+    background-color: green; /* dark green for harmony */
+    color: #fffbe6; /* soft yellow for contrast */
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    margin: 0;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+    top: 0;
+}
+
+.navbar-logo {
+    margin-right: auto;
+}
+
+.logo-img {
+    height: 40px;
+}
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+    margin-right: 2rem; /* Add right margin to nav links */
+}
+
+.nav-link {
+    color: #fffbe6;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s;
+}
+
+.nav-link:hover {
+    color: #ffd700; /* gold accent for vibrancy */
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #004d1a;
+    min-width: 180px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+    padding: 0.5rem 0;
+    margin-top: 0.5rem;
+    border-radius: 4px;
+    z-index: 1000;
+    list-style: none; /* Remove bullets from all dropdown menus */
+    margin: 0;        /* Remove default margin */
+    border: 2px solid #fff; /* Add white border */
+}
+
+.dropdown:hover .dropdown-menu,
+.dropdown:focus-within .dropdown-menu {
+    display: block;
+}
+
+.dropdown-item {
+    color: #fffbe6;
+    padding: 0.5rem 1.5rem;
+    text-decoration: none;
+    display: block;
+    transition: background 0.2s, color 0.2s;
+    font-weight: 500;
+}
+
+.dropdown-item:hover {
+    background-color: #006622;
+    color: #ffd700;
+}
+
+/* Ensure dropdown parent is positioned */
+.dropdown {
+    position: relative;
+}
+
+/* Style specifically for About Us dropdown */
+.navbar-links > li:nth-child(2) {
+    position: relative;
+}
+
+.navbar-links > li:nth-child(2) .dropdown-menu {
+    left: 0;
+    top: 100%;
+    min-width: 220px;
+    background-color: #004d1a;
+    border-radius: 4px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+    padding: 0.5rem 0;
+    list-style: none; /* Remove bullets */
+    margin: 0;        /* Remove default margin */
+}
+
+.navbar-links > li:nth-child(2):hover .dropdown-menu,
+.navbar-links > li:nth-child(2):focus-within .dropdown-menu {
+    display: block;
+}
+
+.navbar-links > li:nth-child(2) .dropdown-item {
+    color: #fffbe6;
+    padding: 0.5rem 1.5rem;
+    text-decoration: none;
+    display: block;
+    font-weight: 500;
+    transition: background 0.2s, color 0.2s;
+}
+
+.navbar-links > li:nth-child(2) .dropdown-item:hover {
+    background-color: #006622;
+    color: #ffd700;
+}
