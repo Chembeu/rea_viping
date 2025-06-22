@@ -9,32 +9,60 @@
 <body>
     <nav class="navbar">
       <div id="logo" class="navbar-logo">
-        <!-- Replace 'logo.png' with your logo file -->
         <img src="static/images/logo.gif" alt="Logo" class="logo-img">
       </div>
       <ul class="navbar-links">
         <li><a href="#" class="nav-link">Home</a></li>
-        <li><a href="#" class="nav-link">About Us</a>
-        <ul class="dropdown-menu">
-        <li><a href="#" class="dropdown-item">Company Information</a></li>
-        <li><a href="#" class="dropdown-item">History and Background</a></li>
-        <li><a href="#" class="dropdown-item">Our Sisal Estates</a></li>
-        <li><a href="#" class="dropdown-item">Amboni Spinning Mill</a></li>
-        <li><a href="#" class="dropdown-item">Hortculture</a></li>
-        <li><a href="#" class="dropdown-item">Marketing</a></li>
+        <li class="dropdown">
+          <a href="#" class="nav-link">About Us</a>
+          <ul class="dropdown-menu">
+            <li><a href="#" class="dropdown-item">Company Information</a></li>
+            <li><a href="#" class="dropdown-item">History and Background</a></li>
+            <li><a href="#" class="dropdown-item">Our Sisal Estates</a></li>
+            <li><a href="#" class="dropdown-item">Amboni Spinning Mill</a></li>
+            <li><a href="#" class="dropdown-item">Hortculture</a></li>
+            <li><a href="#" class="dropdown-item">Marketing</a></li>
           </ul>
         </li>
-        <li class="nav-link dropdown">
+        <li class="dropdown">
           <a href="#" class="nav-link">Our Products</a>
           <ul class="dropdown-menu">
             <li><a href="#" class="dropdown-item">Product & Uses</a></li>
             <li><a href="#" class="dropdown-item">Sisal in East Africa</a></li>
             <li><a href="#" class="dropdown-item">Sisal Plant and extraction</a></li>
-        
           </ul>
         </li>
         <li><a href="#" class="nav-link">Contact Us</a></li>
       </ul>
     </nav>
+    <section class="hero-section" style="background-image: url('static/images/main-section.jpg'); background-size: cover; background-position: center; height: 400px; display: flex; align-items: center; justify-content: center;">
+        <div style="background: rgba(0,0,0,0.4); padding: 40px 60px; border-radius: 10px; color: #fff; text-align: center;">
+            <h1>Welcome to REA Vipingo</h1>
+            <p>The REA Vipingo Group is a well established agricultural business, headquartered in Nairobi, Kenya, which owns and operates a flourishing sisal business, making it the largest sisal fibre producer in Africa</p>
+        </div>
+    </section>
+    <section class="cards-section">
+        <div class="card">
+            <img src="static/images/sisal estates.jpeg" alt="Sisal Estates" class="card-img">
+            <h3>Sisal Estates</h3>
+            <p>Discover our expansive sisal estates and learn how we cultivate high-quality sisal fibre sustainably.</p>
+        </div>
+        <div class="card">
+            <img src="static/images/sisal products.jpeg" alt="Our Products" class="card-img">
+            <h3>Our Products</h3>
+            <p>Explore our range of sisal products and their diverse uses in various industries worldwide.</p>
+        </div>
+        <div class="card">
+            <img src="static/images/card3.jpg" alt="Sustainability" class="card-img">
+            <h3>Sustainability</h3>
+            <p>Learn about our commitment to sustainable agriculture and community development initiatives.</p>
+        </div>
+    </section>
+    <footer class="footer">
+        <div>
+            &copy; 2006 - 2025 REA Vipingo Plantations Ltd. All rights reserved.<br>
+            Powered by <a href="#">artKenya</a>. Contact webmaster.
+        </div>
+    </footer>
 </body>
 </html>

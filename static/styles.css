@@ -1,13 +1,21 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    margin: 0; /* Remove default body margin */
-    
+    margin: 0;
     background-color: #004d1a;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .navbar {
-    background-color: green; /* dark green for harmony */
-    color: #fffbe6; /* soft yellow for contrast */
-    padding: 1rem 2rem;
+    background-color: #004d1a;
+    color: #fffbe6;
+    padding: 1rem 2rem 1rem 2rem;
     display: flex;
     align-items: center;
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
@@ -34,7 +42,7 @@ body {
     gap: 15px;
     margin: 0;
     padding: 0;
-    margin-right: 2rem; /* Add right margin to nav links */
+    margin-right: 2rem;
 }
 
 .nav-link {
@@ -45,7 +53,11 @@ body {
 }
 
 .nav-link:hover {
-    color: #ffd700; /* gold accent for vibrancy */
+    color: #ffd700;
+}
+
+.dropdown {
+    position: relative;
 }
 
 .dropdown-menu {
@@ -58,9 +70,9 @@ body {
     margin-top: 0.5rem;
     border-radius: 4px;
     z-index: 1000;
-    list-style: none; /* Remove bullets from all dropdown menus */
-    margin: 0;        /* Remove default margin */
-    border: 2px solid #fff; /* Add white border */
+    list-style: none;
+    margin: 0;
+    border: 2px solid #fff;
 }
 
 .dropdown:hover .dropdown-menu,
@@ -73,8 +85,8 @@ body {
     padding: 0.5rem 1.5rem;
     text-decoration: none;
     display: block;
-    transition: background 0.2s, color 0.2s;
     font-weight: 500;
+    transition: background 0.2s, color 0.2s;
 }
 
 .dropdown-item:hover {
@@ -82,43 +94,61 @@ body {
     color: #ffd700;
 }
 
-/* Ensure dropdown parent is positioned */
-.dropdown {
-    position: relative;
+.hero-section {
+    margin: 0;
+    min-height: 400px;
+    padding: 60px 0;
+    font-size: 2rem;
 }
 
-/* Style specifically for About Us dropdown */
-.navbar-links > li:nth-child(2) {
-    position: relative;
+.cards-section {
+    background:  #004d1a;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px 0;
+    margin: 0;
 }
 
-.navbar-links > li:nth-child(2) .dropdown-menu {
-    left: 0;
-    top: 100%;
-    min-width: 220px;
-    background-color: #004d1a;
-    border-radius: 4px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
-    padding: 0.5rem 0;
-    list-style: none; /* Remove bullets */
-    margin: 0;        /* Remove default margin */
+.card {
+    background: #062912;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    width: 300px;
+    padding: 24px;
+    text-align: center;
+    margin: 0;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.navbar-links > li:nth-child(2):hover .dropdown-menu,
-.navbar-links > li:nth-child(2):focus-within .dropdown-menu {
-    display: block;
+.card-img {
+    width: 100%;
+    border-radius: 6px 6px 0 0;
 }
 
-.navbar-links > li:nth-child(2) .dropdown-item {
-    color: #fffbe6;
-    padding: 0.5rem 1.5rem;
-    text-decoration: none;
-    display: block;
-    font-weight: 500;
-    transition: background 0.2s, color 0.2s;
+.footer {
+    background: #003311;
+    color: #ffe066;
+    text-align: center;
+    padding: 24px 0;
+    margin-top: 48px;
+    margin-bottom: 0;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+    border-top: 3px solid #ffd700;
+    box-shadow: 0 -2px 8px rgba(0,0,0,0.08);
+    flex-shrink: 0;
 }
 
-.navbar-links > li:nth-child(2) .dropdown-item:hover {
-    background-color: #006622;
+.footer a {
     color: #ffd700;
+    text-decoration: underline;
+    transition: color 0.2s;
+}
+
+.footer a:hover {
+    color: #fffbe6;
 }
