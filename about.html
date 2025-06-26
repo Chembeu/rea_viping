@@ -3,37 +3,131 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>REA Vipingo</title>
-    <link rel="stylesheet" href="static/styles.css">
+    <title>About Us | Company Name</title>
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <nav class="navbar">
-      <div id="logo" class="navbar-logo">
-        <img src="static/images/logo.gif" alt="Logo" class="logo-img">
-      </div>
-      <ul class="navbar-links">
-        <li><a href="#" class="nav-link">Home</a></li>
-        <li class="dropdown">
-          <a href="#" class="nav-link">About Us</a>
-          <ul class="dropdown-menu">
-            <li><a href="#" class="dropdown-item">Company Information</a></li>
-            <li><a href="#" class="dropdown-item">History and Background</a></li>
-            <li><a href="#" class="dropdown-item">Our Sisal Estates</a></li>
-            <li><a href="#" class="dropdown-item">Amboni Spinning Mill</a></li>
-            <li><a href="#" class="dropdown-item">Hortculture</a></li>
-            <li><a href="#" class="dropdown-item">Marketing</a></li>
-          </ul>
-        </li>
-        <li class="dropdown">
-          <a href="#" class="nav-link">Our Products</a>
-          <ul class="dropdown-menu">
-            <li><a href="#" class="dropdown-item">Product & Uses</a></li>
-            <li><a href="#" class="dropdown-item">Sisal in East Africa</a></li>
-            <li><a href="#" class="dropdown-item">Sisal Plant and extraction</a></li>
-          </ul>
-        </li>
-        <li><a href="#" class="nav-link">Contact Us</a></li>
-      </ul>
-    </nav>
-    </body>
-    </html>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">Company<span>Name</span></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="about-hero">
+            <div class="hero-content">
+                <h1>Our Story</h1>
+                <p>Learn about our journey, values, and the team behind our success.</p>
+            </div>
+        </section>
+
+        <section class="about-content">
+            <div class="container">
+                <div class="about-history">
+                    <h2>Our History</h2>
+                    <p>Founded in 2010, we started as a small team with a big vision. Over the years, we've grown into a trusted name in our industry, serving thousands of satisfied clients worldwide.</p>
+                    <p>Our commitment to excellence and innovation has driven our success and helped us build lasting relationships with our customers.</p>
+                </div>
+
+                <div class="mission-vision">
+                    <div class="mission">
+                        <h3><i class="fas fa-bullseye"></i> Our Mission</h3>
+                        <p>To deliver exceptional products and services that exceed customer expectations while fostering sustainable growth and innovation.</p>
+                    </div>
+                    <div class="vision">
+                        <h3><i class="fas fa-eye"></i> Our Vision</h3>
+                        <p>To be the global leader in our industry by 2030, recognized for our quality, integrity, and positive impact on society.</p>
+                    </div>
+                </div>
+
+                <div class="team-section">
+                    <h2>Meet Our Team</h2>
+                    <p>Our talented professionals are the backbone of our company.</p>
+                    <div class="team-grid" id="teamContainer">
+                        <!-- Team members will be loaded via JavaScript -->
+                    </div>
+                </div>
+
+                <div class="stats-section">
+                    <h2>By The Numbers</h2>
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="250">0</div>
+                            <div class="stat-label">Employees</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="5000">0</div>
+                            <div class="stat-label">Clients</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="15">0</div>
+                            <div class="stat-label">Countries</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="98">0</div>
+                            <div class="stat-label">% Satisfaction</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container">
+                <h2>Ready to work with us?</h2>
+                <p>Join thousands of satisfied customers who trust us with their business.</p>
+                <a href="contact.html" class="cta-button">Get in Touch</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>About Us</h3>
+                <p>We are a company dedicated to providing the best services and solutions to our clients worldwide.</p>
+                <div class="socials">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Business Ave, City, Country</p>
+                <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                <p><i class="fas fa-envelope"></i> info@company.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Company Name. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
