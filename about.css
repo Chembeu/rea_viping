@@ -653,6 +653,38 @@ main {
     line-height: 1.6;
 }
 
+/* Amboni Spinning Mill Section */
+.amboni-spinning-mill-section {
+    background: #e6f4ea;
+    /* padding: 60px 0 40px 0; */
+}
+
+.amboni-spinning-mill-section .container {
+    /* max-width: 900px; */
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(20,83,45,0.08);
+    padding: 40px 24px;
+}
+
+.amboni-spinning-mill-section h2 {
+    text-align: center;
+    color: #14532d;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    letter-spacing: 1px;
+}
+
+.amboni-spinning-mill-section p {
+    color: #333;
+    font-size: 1.08rem;
+    line-height: 1.7;
+    margin-bottom: 1.2rem;
+    text-align: left;
+}
+
 @media (max-width: 900px) {
     .footer-container {
         flex-direction: column;
@@ -692,5 +724,11 @@ main {
     .estate-card {
         max-width: 100%;
         width: 100%;
+    }
+    .amboni-spinning-mill-section .container {
+        padding: 24px 8px;
+    }
+    .amboni-spinning-mill-section h2 {
+        font-size: 1.3rem;
     }
 }
